@@ -35,6 +35,26 @@
 <section id="join" class="box">
 <h2>Join Our Club</h2>
 <p>Everyone is welcome to join our reading club!</p>
+
+<form>
+<label for="name">Your name</label>
+<input type="text" id="name" name="name" required>
+
+<label for="email">Email</label>
+<input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+<label for="interest">What interests you about our club?</label>
+<select id="interest" name="interest">
+<option value="books">Book discussions</option>
+<option value="recommendations">Book recommendations</option>
+<option value="community">Meeting other readers</option>
+</select>
+
+<label for="message">Anything we should know?</label>
+<textarea id="message" name="message" rows="4"></textarea>
+
+<button type="submit">Sign me up</button>
+</form>
 </section>
 
 </main>
