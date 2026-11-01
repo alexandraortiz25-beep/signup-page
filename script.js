@@ -16,3 +16,4 @@ console.log("Goodbye! See you next time!");
 
 sayHi();
 sayBye();
+sayBye();
