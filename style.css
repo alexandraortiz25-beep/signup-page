@@ -37,8 +37,7 @@ padding: 60px;
 background-color: #e8f5e9;
 }
 label {
-display: block;
-margin-top: 16px;
+display: block; 
 font-weight: bold;
 }
 
@@ -51,7 +50,6 @@ font: inherit;
 
 button {
 display: block;    
-margin-top: 16px;
 padding: 10px 20px;
 font: inherit;
 }
@@ -65,4 +63,29 @@ outline-offset: 2px;
 
 input:user-invalid {
 border: 2px solid crimson;
+}
+
+.cards {
+display: flex;
+gap: 16px;
+flex-wrap: wrap;
+}
+
+.card {
+flex: 1 1 200px;
+border: 2px solid darkgreen;
+padding: 16px;
+}
+
+form {
+display: flex;
+flex-direction: column;
+gap: 16px;
+max-width: 30rem;
+}
+
+.field {
+display: flex;
+flex-direction: column;
+gap: 4px;
 }

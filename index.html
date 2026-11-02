@@ -27,6 +27,27 @@
 <p>We read one book every month and share our ideas.</p>
 </section>
 
+<section id="reasons">
+<h2>Three reasons to join!</h2>
+
+<div class="cards">
+<div class="card">
+<h3>Great books</h3>
+<p>We vote on what to read next.</p>
+</div>
+
+<div class="card">
+<h3>Good conversations</h3>
+<p>We share ideas and discuss our favorite books.</p>
+</div>
+
+<div class="card">
+<h3>New friends</h3>
+<p>Meet other readers who love books.</p>
+</div>
+</div>
+</section>
+
 <section id="schedule" class="box">
 <h2>Our Schedule</h2>
 <p>We meet every Sunday at 3 PM.</p>
@@ -39,21 +60,34 @@
 <p>Everyone is welcome to join our reading club!</p>
 
 <form>
+<div class="field">
 <label for="name">Your name</label>
 <input type="text" id="name" name="name" required>
+</div>
 
+<div class="field">
 <label for="email">Email</label>
 <input type="email" id="email" name="email" placeholder="you@example.com" required>
+</div>
 
+<div class="field">
+<label for="password">Create a password for the members' page</label>
+<input type="password" id="password" name="password" required>
+</div>
+
+<div class="field">
 <label for="interest">What interests you about our club?</label>
 <select id="interest" name="interest">
 <option value="books">Book discussions</option>
 <option value="recommendations">Book recommendations</option>
 <option value="community">Meeting other readers</option>
 </select>
+</div>
 
+<div class="field">
 <label for="message">Anything we should know?</label>
 <textarea id="message" name="message" rows="4"></textarea>
+</div>
 
 <button type="submit">Sign me up</button>
 </form>
