@@ -2,6 +2,15 @@
 box-sizing: border-box;
 }
 
+:root {
+--page-bg: #fff8f0;
+--text: #333333;
+--brand: darkgreen;
+--secondary-color: #8b4513;
+}
+
+
+
 html {
 scroll-behavior: smooth;
 }
@@ -9,15 +18,17 @@ scroll-behavior: smooth;
 body {
 font-family: Arial, sans-serif;
 margin: 0 24px;
-background-color: #fff8f0;
+background-color: var(--page-bg);
+color: var(--text);
 }
+/
 
 h1 {
-color: darkgreen;
+color: var(--brand);
 }
 
 h2 {
-color: #8b4513;
+color: var(--secondary-color);
 }
 
 nav {
@@ -27,12 +38,12 @@ text-align: center;
 
 nav a {
 margin: 15px;
-color: darkgreen;
+color: var(--primary-color);
 }
 
 .box {
 margin: 40px 0;
-border: 3px dashed darkgreen;
+border: 3px dashed var(--primary-color);
 padding: 60px;
 background-color: #e8f5e9;
 }
@@ -73,7 +84,7 @@ flex-wrap: wrap;
 
 .card {
 flex: 1 1 200px;
-border: 2px solid darkgreen;
+border: 2px solid var(--primary-color);
 padding: 16px;
 }
 
@@ -88,4 +99,27 @@ max-width: 30rem;
 display: flex;
 flex-direction: column;
 gap: 4px;
+}
+
+.hero {
+background-color: rgba(0, 100, 0, 0.85);
+color: white;
+padding: 64px 24px;
+text-align: center;
+}
+
+.cta {
+display: inline-block;
+background: gold;
+color: black;
+padding: 12px 24px;
+border-radius: 8px;
+text-decoration: none;
+font-weight: bold;
+}
+
+@media (min-width: 700px) {
+.hero h2 {
+font-size: 3rem;
+}
 }
